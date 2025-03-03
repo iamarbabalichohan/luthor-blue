@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Kudryashev Headline Sans Web";
+  src: url("https://db.onlinewebfonts.com/t/1d4579d5f8e260642e9f21112b5e9996.eot");
+  src: url("https://db.onlinewebfonts.com/t/1d4579d5f8e260642e9f21112b5e9996.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1d4579d5f8e260642e9f21112b5e9996.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1d4579d5f8e260642e9f21112b5e9996.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/1d4579d5f8e260642e9f21112b5e9996.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1d4579d5f8e260642e9f21112b5e9996.svg#Kudryashev Headline Sans Web")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Sohne";
+  font-weight: 300; /* Light */
+  src: url("../fonts/TestSohne-Leicht.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sohne";
+  font-weight: 400; /* Regular */
+  src: url("../fonts/TestSohne-Buch.otf") format("opentype");
+}
+
+.sohne-300{
+  font-family: "Sohne", sans-serif;
+  font-weight: 300;
+}
+.sohne-400{
+  font-family: "Sohne", sans-serif;
+  font-weight: 400;
+}
+* {
+  font-family: "Kudryashev Headline Sans Web";
+}
+body {
+  background-color: #f7f4ec;
+}
+.custom-scrollbar {
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Scrollbar Track */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+  height: 2px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 10px; /* Rounded track */
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #000101; /* Dark gray scrollbar */
+  border-radius: 10px; /* Rounded scrollbar */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Handle on hover - Increase size */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+  width: 6px; /* Increase width */
+  height: 6px; /* Increase height */
+}
+.similar-product-cart-btn {
+  visibility: hidden;
+}
+
+.similar-product:hover .similar-product-cart-btn {
+  visibility: visible;
+}
+
+/* Ensure buttons are always visible on smaller screens */
+@media (max-width: 768px) {
+  .similar-product-cart-btn {
+    visibility: visible !important;
+  }
+}
+
+header{
+  display: none;
+}

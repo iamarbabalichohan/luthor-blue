@@ -1,0 +1,27 @@
+/*
+Theme Name: Luther Blue 4
+Theme URI: https://example.com/luther-blue
+Author: Arbab Ali Chohan
+Author URI: https://arbabali.com
+Description: A basic WordPress theme named Luther Blue.
+Version: 2.1
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Ecommerce
+Text Domain: luther-blue
+*/
+
+/* Add basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
